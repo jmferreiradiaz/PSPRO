@@ -15,15 +15,15 @@ public class LanzaRuntime {
     }
 
     // Le pasamos los argumentos al ProcessBuilder
-    ProcessBuilder pb = new ProcessBuilder(args);
+    Runtime r = Runtime.getRuntime();
     
     /* Con esta llamada hacemos que el proceso herede la entrada 
     y salida estándares del proceso padre */
-    pb.inheritIO();
+    //pb.inheritIO();
 
     try {
     // Arrancamos el proceso
-      Process p = pb.start();
+      Process p = r.exec(args);
       
     /* Se espera a que termine la ejecución del proceso hijo y se obtiene el código de retorno.
      * Si durante la espera se interrumple la ejecución del programa, se lanzaría una excepción
