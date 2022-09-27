@@ -1,9 +1,8 @@
-package lanzaproceso;
+package lanzaprocesolento;
 
-import java.util.Arrays;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Map;
-import java.util.Iterator;
 
 public class LanzaProceso {
 
@@ -23,7 +22,6 @@ public class LanzaProceso {
     y salida estándares del proceso padre */
     pb.inheritIO();
 
-    Map<String, String> entorno = pb.environment();
 
     try {
     // Arrancamos el proceso
@@ -39,11 +37,10 @@ public class LanzaProceso {
               + " " + (codRet == 0 ? "(ejecución correcta)" : "(ERROR)")
       );
 
-      /*Iterator it = entorno.keySet().iterator();
-      while(it.hasNext()){
-        String key = it.next();
-        System.out.println("DNI: " + key + " -> Nombre: " + entorno.get(key));
-      }*/
+      while (p.isAlive()){
+        System.out.println("vivo");
+      }
+
     } catch (IOException e) {
       System.err.println("Error durante ejecución del proceso");
       System.err.println("Información detallada");
