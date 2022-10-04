@@ -1,4 +1,4 @@
-package lanzaprocesolento;
+package ejercicio2;
 
 public class ProcesoLento {
 

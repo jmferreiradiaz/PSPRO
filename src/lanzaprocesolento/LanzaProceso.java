@@ -38,8 +38,13 @@ public class LanzaProceso {
       );
 
       while (p.isAlive()){
-        System.out.println("vivo");
+        System.out.println("Proceso sigue en ejecución");
+        Thread.sleep(3000);
       }
+      if (!p.isAlive()) {
+        System.out.println("Proceso terminado");
+      }
+
 
     } catch (IOException e) {
       System.err.println("Error durante ejecución del proceso");
