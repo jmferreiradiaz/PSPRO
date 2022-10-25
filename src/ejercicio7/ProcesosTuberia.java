@@ -22,7 +22,7 @@ public class ProcesosTuberia {
 
         pb3.redirectOutput(new File("C:\\Users\\jmferreira\\Desktop\\PSPRO\\PSPRO\\src\\ejercicio7\\salida.txt"));
         //lpb.add(pb3);
-       // lpb.add(pb4);
+       // lpb.add(pb4); 
 
         try{
             List<Process> lProcess = ProcessBuilder.startPipeline(lpb);
