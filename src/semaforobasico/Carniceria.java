@@ -23,8 +23,11 @@ public class Carniceria implements Runnable{
     public static void main(String[] args) {
         Carniceria c = new Carniceria();
         for(int i=0; i<10; i++) {
+            //Creamos un hilo
             Thread th = new Thread(c);
+            //Le ponemos un nombre al hilo
             th.setName("cliente "+i);
+            //Lanzamos el hilo
             th.start();
         }
     }
