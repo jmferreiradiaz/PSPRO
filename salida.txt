@@ -1,0 +1,8 @@
+46.35.108.6 Es de clase A
+99.192.176.233 Es de clase A
+47.164.16.161 Es de clase A
+189.235.32.54 Es de clase B
+7.63.142.53 Es de clase A
+12.52.122.254 Es de clase A
+174.7.202.78 Es de clase B
+23.197.204.134 Es de clase A
